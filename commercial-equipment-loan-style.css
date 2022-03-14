@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* back button */
+.back-button{
+    top: 0;
+    position: sticky;
+    justify-items: right;
+    padding: 2%;
+    padding-top: 47%;
+    
+}
+.back-button input{
+    width: 100px;
+    background: linear-gradient(135deg,#5ac7e6,#00ccff);
+    border-radius: 5px;
+    height: 30px;
+    font-size: 1.5rem;
+}
+
+/*Navigation Bar*/
+.navbar{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* background-color: rgb(255, 148, 148); */
+    background: linear-gradient(rgb(0, 225, 255), rgba(10, 179, 66, 0));
+    color: rgb(0, 0, 0);
+    justify-content: center;
+}
+.nav-logo img{
+    width: 150px;
+    padding: 0px;
+    margin: 0px;
+    align-items:flex-start;
+}
+.nav-title a{
+    font-size: 3rem;
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.nav-title{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+
+/*Applicant*/
+.applicant{
+    padding: 2%;
+}
+.applicant h1{
+    background-color: rgba(26, 219, 219, 0.37);
+    display: flex;
+    font-size: 3rem;
+    color:rgb(255, 76, 44);
+    justify-content: center;
+    align-items: center;
+}
+.applicant h2{
+    background-color: rgba(54, 180, 238, 0.507);
+    display: flex;
+    justify-content: center;
+}
+.applicant p{
+    padding-bottom: 2%;
+    background-color: antiquewhite;
+    font-size: 2rem;
+    padding-left: 7%;
+}
+
+
+
+@media(max-width: 1080px) {
+    /*Navigation Bar*/
+    .toggle-button{
+        display: flex;
+    }
+    .nav-logo{
+        margin: 10px;
+        align-self: center;
+        display: flex;
+    }
+    .nav-title{
+        padding: 20px;
+        text-align: center;
+        display: flex;
+    }
+    .nav-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-links li{
+        text-align: center;
+    }
+    .nav-links li a{
+        padding: .5rem 1rem;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+}

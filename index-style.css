@@ -31,7 +31,7 @@ body{
     position: sticky; 
     top: 0;
     align-items: center;
-    background: linear-gradient(rgb(0, 219, 248), rgba(0, 234, 255, 0));
+    background-color: #71eafff1;
     color: rgb(0, 0, 0);
     justify-content: center;
 }
@@ -79,10 +79,14 @@ body{
     list-style-type: decimal;
     width: 25vw;
 }
+.document-lists ul{
+    list-style-position: inside;
+}
 .document-lists a:hover{
     background-color: #b5e5ffc5;
     color: #08007c;
 }
+
 /* quick apply form */
 .quick-apply{
     justify-items: center;
@@ -133,7 +137,12 @@ form .user-details .input-box{
     color:rgb(255, 255, 255);
     margin-top: 5%;
 }
-links
+.quick-apply-form .button input:hover{
+    background: linear-gradient(135deg, #4a5cff, #ade2ff);
+    border-color: #6f00ff;
+    border-width: 2px;
+}
+
 .links{
     padding-right: 4%;
 }
@@ -147,9 +156,11 @@ links
 .links li{
     padding-top: 20%;
     list-style: url(Data/point.png);
-    list-style-position:inherit;
     list-style-type: decimal;
     width: 20vw;
+}
+.links li{
+    list-style-position: inside;
 }
 .links a:hover{
     color: #08007c;
